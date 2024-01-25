@@ -1,10 +1,13 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "homepage": "https://artemteklyuk.github.io/TodoList-server",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "nodemon index.js"
   },
   "keywords": [],
@@ -21,6 +24,7 @@
     "sequelize": "^6.34.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "nodemon": "^3.0.1"
   }
 }
